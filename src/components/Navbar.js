@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Navbar() {
+export default function Navbar(props) {
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -32,6 +32,20 @@ export default function Navbar() {
                 </a>
               </li>
             </ul>
+          </div>
+
+          <div>
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckDefault"
+              />
+              <label class="form-check-label" for="flexSwitchCheckDefault">
+                Enable Dark Mode
+              </label>
+            </div>
           </div>
         </div>
       </nav>
